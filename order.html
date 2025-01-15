@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Registration</title>
+    <style>
+        body {
+            background-color: silver;
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+            height: 100vh;         
+            margin: 0;
+        }
+
+        .forms {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            border: 3px solid black;
+            border-radius: 60px;
+            height: 350px;
+            width: 350px;
+            justify-content: center;
+            background-color: rgb(54, 54, 238);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .labels {
+            font-size: larger;
+            margin-left: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .inputs {
+            width: 300px;
+            height: 30px;
+            margin: 10px;
+            border-radius: 15px;
+        }
+
+        button {
+            margin: 20px auto 0 auto; 
+            height: 30px;
+            width: 100px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        input:hover {
+            background-color: whitesmoke;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .home {
+            position: absolute; 
+            top: 10px;
+            left: 10px;
+            color: blue;
+            font-size: larger;
+        }
+
+        .home:hover {
+            font-size: medium;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home">HOME</a>  
+
+    <form class="forms" action="response.html" method="GET">
+        <label for="name" class="labels">Name</label>
+        <input type="text" id="name" class="inputs" required>
+
+        <label for="vehicle-no" class="labels">Track Vehicle No</label>
+        <input type="number" id="vehicle-no" class="inputs" required>
+
+        <label for="contact" class="labels">Contact</label>
+        <input type="number" id="contact" class="inputs" required>
+
+        <label for="email" class="labels">Email</label>
+        <input type="email" id="email" class="inputs" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

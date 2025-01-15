@@ -1,0 +1,57 @@
+.main_images {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow-y: scroll;
+  height: 500px;
+}
+img {
+  height: 300px;
+  width: 400px;
+  border-radius: 50px;
+}
+
+.body_img {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+  position: sticky;
+  font-family: cursive;
+  margin-top: 30px;
+}
+p {
+  width: 400px;
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+body {
+  background-color: silver;
+  color: black;
+}
+.my_order{
+  align-items: center;
+  border-radius: 40px;
+  height: 50px;
+  width: 300px;
+  background-color: blue;
+  color: whitesmoke;
+  font-size: larger;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+a{
+  font-size: larger;
+}
+a:hover {
+  font-size:medium;
+  color: black;
+}
+
